@@ -17,8 +17,13 @@ from __future__ import annotations
 
 
 def read_lines(path):
-    """M1-01. Return the non-empty lines of the file, each with surrounding whitespace removed."""
-    raise NotImplementedError("M1-01: implement read_lines")
+    lines = []
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                lines.append(line)
+    return lines
 
 
 def parse_line(line):
