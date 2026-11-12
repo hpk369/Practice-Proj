@@ -42,4 +42,6 @@ You should see 241. The file has 243 lines, so two were empty.
 
 ## Explain-back (answer in the PR)
 1. What would go wrong later if you kept the newline on the end of each line?
+Ans: number of log enteries will increase resulting in incorrect diagnosis along with parse failures for furture tasks
 2. What is the difference between `print(lines)` and `return lines`?
+Ans: `print(lines)` will print when the function is executed no data is passed to the calling function whereas `return lines` will not print during execution but transfer that variable data to calling function

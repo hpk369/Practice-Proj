@@ -6,7 +6,7 @@ import pytest
 
 from m1_log_triage import triage
 
-pytestmark = pytest.mark.skip(reason="M1-01 not started. Delete this line when you begin the ticket.")
+# pytestmark = pytest.mark.skip(reason="M1-01 not started. Delete this line when you begin the ticket.")
 
 LOG = Path(__file__).parent.parent / "data" / "access.log"
 
