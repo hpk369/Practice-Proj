@@ -17,12 +17,12 @@ from __future__ import annotations
 
 
 def read_lines(path):
-    f = open(path) 
     lines = []
-    for line in f:
-        line = line.strip()
-        if line:
-            lines.append(line)
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                lines.append(line)
     return lines
 
 
