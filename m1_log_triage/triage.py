@@ -17,6 +17,7 @@ from __future__ import annotations
 
 
 def read_lines(path):
+    """M1-01. Return the non-empty lines..."""
     lines = []
     with open(path) as f:
         for line in f:
