@@ -17,7 +17,6 @@ from __future__ import annotations
 
 
 def read_lines(path):
-    #M1-01. Return the non-empty lines of the file, each with surrounding whitespace removed.
     f = open(path) 
     lines = []
     for line in f:
@@ -25,7 +24,6 @@ def read_lines(path):
         if line:
             lines.append(line)
     return lines
-    #raise NotImplementedError("M1-01: implement read_lines")
 
 
 def parse_line(line):
