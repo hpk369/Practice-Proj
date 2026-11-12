@@ -1,0 +1,18 @@
+[project]
+name = "practice-proj"
+version = "0.1.0"
+description = "Python practice projects built as tickets, around the fictional SaaS Acme Shield"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["m1_log_triage", "m2_api_key_checker", "m3_rate_limiter"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["**/drills"]  # drill files are broken on purpose
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/*" = ["F401"]
