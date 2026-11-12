@@ -17,7 +17,7 @@ from __future__ import annotations
 
 
 def read_lines(path):
-    """M1-01. Return the non-empty lines of the file, each with surrounding whitespace removed."""
+    #M1-01. Return the non-empty lines of the file, each with surrounding whitespace removed.
     f = open(path) 
     lines = []
     for line in f:
