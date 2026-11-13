@@ -15,6 +15,8 @@ your code. Add the imports you need at the top as you go.
 
 from __future__ import annotations
 
+import json
+
 
 def read_lines(path):
     """M1-01. Return the non-empty lines..."""
@@ -29,8 +31,8 @@ def read_lines(path):
 
 def parse_line(line):
     """M1-02 and M1-03. Turn one log line into a dict. Return None if it isn't valid JSON."""
-    raise NotImplementedError("M1-02: implement parse_line")
-
+    line_dict = json.loads(line)
+    return line_dict
 
 def load_records(path):
     """M1-03. Return every valid record in the file as a list of dicts. Skip bad lines."""
